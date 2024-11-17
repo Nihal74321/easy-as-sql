@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*:root {
+    --width: 22rem;
+    --b-radius: 4rem;
+    --white: #ffffff;
+    --gray: #a2a2a2;
+    --blue: #0066ff;
+    --light-blue: #a7c7f7;
+    --blue-active: rgba(0,102,255,0.5);
+    --titanium: #7f9497;
+    --dark-gray: #1e1e1e;
+    --mid-gray: #464646;
+    --light-gray: #5e5e5e;
+    --light-slate: #cacaca;
+    --mid-slate: #b6b6b6;
+    --dark-plain: #121212;
+    --gray-blend: #282828;
+    --orange: #fb3f1e;
+    --slate: #878787;
+    --dark-slate: #202020;
+    --yellow: #EF910D;
+    --purp-gradient: linear-gradient(#A737CC, #73248D);
+    --iphone-color: #6b8f95;
+    --not-white: #f2f2f2;
+    --black: #090909;
+    --recording-color: #F89601;
+    --lens-colour: radial-gradient(#202451, #0a0c23);
+    --light-green: #38e260;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+    width: 85%;
+}
+.header {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+.iphone {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+.iphone > * {
+    width: 90%;
+    height: 90%;
+}
+.mtc {
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.main-par {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: var(--light-gray);
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.doc-carousel {
+    width: 90%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.doc-card {
+    flex-shrink: 0;
+    width: 24rem;
+    aspect-ratio: 4/7;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    object-fit: contain;
+    transition: transform 200ms ease-in-out;
+}
+.doc-card:hover {
+    transform: scale(105%);
+}
+.card-2 {
+    background-color: var(--dark-plain);
+    color: var(--white);
+    justify-content: flex-start;
+    gap: 3rem;
+}
+.card-2 .text-sub {
+    color: var(--light-slate);
+}
+.card-3 {
+    background: linear-gradient(var(--light-blue) 60%, var(--white));
+    color: var(--dark-plain);
+}
+.card-3 .text-sub {
+    color: var(--dark-slate);
+}
+.lock {
+    font-size: 300px;
+    color: var(--titanium);
+}
+.cards {
+    display: flex;
+    gap: 1.5rem;
+}
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+.doc-button {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    padding: 0;
+    margin: 0;
+    aspect-ratio: 1/1;
+    background-color: var(--light-slate);
+    cursor: pointer;
+}
+.doc-button:active {
+    background-color: var(--mid-slate);
+}
+.doc-button > * {
+    color: var(--gray-blend);
+}
+.text-header {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+    font-weight: 600 !important;
+}
+.card-1 .text-header {
+    color: var(--black);
+}
+.text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+.text-sub {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 1rem;
+    color: var(--light-gray);
+    padding-inline: 1.8rem;
+}
+.doc-card > img {
+    width: 100%;
+}
+.icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+.card-4 {
+    background: linear-gradient(var(--indigo), var(--white));
+}
+.card-4 .text-header {
+    color: var(--white);
+}
+.card-4 .text-sub, .text-header {
+    color: var(--not-white);
+}

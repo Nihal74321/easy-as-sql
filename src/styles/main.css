@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*:root {
+    --width: 22rem;
+    --b-radius: 4rem;
+    --white: #ffffff;
+    --gray: #a2a2a2;
+    --blue: #0066ff;
+    --dark-gray: #1e1e1e;
+    --mid-gray: #464646;
+    --light-gray: #5e5e5e;
+    --dark-plain: #121212;
+    --orange: #fb3f1e;
+    --slate: #878787;
+    --yellow: #EF910D;
+    --purp-gradient: linear-gradient(#A737CC, #73248D);
+    --iphone-color: #6b8f95;
+    --not-white: #f2f2f2;
+    --black: #090909;
+    --void: #050505;
+    --recording-color: #F89601;
+    --lens-colour: radial-gradient(#202451, #0a0c23);
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.phone-container-main {
+    overscroll-behavior-block: none;
+    scroll-behavior: smooth;
+    width: var(--width);
+    height: 44rem;
+    border-radius: var(--b-radius);
+    border: 6px solid black;
+    position: relative;
+    outline: 5px solid var(--iphone-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-plain);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--white) !important;
+    scrollbar-width: none;
+    user-select: none;
+    box-shadow: 45px 30px 40px var(--light-gray);
+}
+.warning-text {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 2.5rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+.overlay {
+    width: 100%;
+    height: inherit;
+    /* change this */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 99;
+    pointer-events: none;
+}
+.phone-time {
+    font-size: 0.8rem;
+}
+.cta-title {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    padding-block: 1rem 2rem;
+}
+.home-nav-bar {
+    width: 35%;
+    border-radius: 2rem;
+    padding-block: 0.15rem;
+    align-self: center;
+    background-color: var(--white);
+    pointer-events: auto;
+    z-index: 100;
+    z-index: 99;
+    transition: margin-bottom 200ms ease-in-out;
+}
+.home-nav-bar.animate {
+    margin-bottom: 0.1rem;
+}
+.phone-container-main::-webkit-scrollbar {
+    display: none;
+}
+.outer-container {
+    width: 95%;
+    height: 100%;
+    border-block: 1px solid var(--slate);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dynamic-island {
+    width: 30%;
+    height: 65%;
+    padding-block: 0.3rem;
+    background-color: var(--void);
+    border-radius: var(--b-radius);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+}
+.top-hud {
+    width: 100%;
+    height: 3rem;
+    z-index: 99;
+    background-color: rgba(12,12,12,0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: -webkit-sticky;
+    top: 0;
+    padding-block: 1rem !important;
+    padding-inline: 1.5rem;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons {
+    display: flex;
+    gap: 0.3rem;
+    scale: 110%;
+    padding-right: 1rem;
+}
+.battery {
+    scale: 140%;
+    margin-left: 0.2rem;
+}
+.not-island {
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    width: 100%;
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.recording-true {
+    background-color: var(--recording-color);
+    width: 0.3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+.lens-inner{
+    width: 0.6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--lens-colour);
+}
+.camera-lens {
+    width: 1.2rem;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-outer {
+    padding-top: 2.5rem;
+    width: 100%;
+    padding-bottom: 5rem;
+    position: absolute;
+}
